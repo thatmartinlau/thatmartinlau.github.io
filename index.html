@@ -2,49 +2,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Martin Lau's webpage</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="header">
-        <div class="logo"></div>
-        <h1>Your Name</h1>
-        <div class="subtitle">Position at Institution</div>
+
+  <div id="container">
+
+    <!-- ============ HEADER ============ -->
+    <div id="header">
+      <h1>Martin Lau</h1>
+      <p class="tagline">M2 Data Science Student at X-HEC</p>
     </div>
 
-    <nav>
-        <a href="#index">Index</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#misc">Miscellaneous</a>
-    </nav>
-
-    <div class="content">
-        <main>
-            <section id="presentation">
-                <h2>Presentation</h2>
-                <p>Current position and brief introduction...</p>
-            </section>
-
-            <section id="research">
-                <h2>Research Interests</h2>
-                <p>Research description and interests...</p>
-            </section>
-
-            <section id="news">
-                <h2>News</h2>
-                <ul>
-                    <li><strong>Date:</strong> News item description...</li>
-                </ul>
-            </section>
-        </main>
-
-        <aside>
-            <img src="profile.jpg" alt="Profile" class="profile-img">
-        </aside>
+    <!-- ============ NAVIGATION ============ -->
+    <div id="nav">
+      <ul class="nav-main">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <ul class="nav-social">
+        <li><a href="https://linkedin.com/in/-martinlau" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/thatmartinlau" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:thatmartinlau@gmail.com">Email</a></li>
+      </ul>
     </div>
+
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <div id="main">
+
+      <!-- HOME / INTRO -->
+      <div id="home" class="section">
+        <h2>Welcome</h2>
+        <div class="intro">
+            <img src="images/me.jpg" alt="Photo of Martin Lau" class="avatar" />
+          <p>
+            Hello hello, welcome to my webpage! I come from Hong Kong, and am currently living in France.
+            I'm a final year data science student at HEC Paris, with a technical and a business background.
+            My professional interests lie in data science applied to retail and luxury, but I am open to 
+            discovering other sectors and fields.
+          </p>
+          <p>
+            <!-- Below you'll find a couple snippets of my life.     -->
+          </p>
+        </div>
+      </div>
+
+      <!-- CV -->
+      <div id="cv" class="section">
+        <h2>CV</h2>
+        <div class="cvbox">
+          <p>
+            If you're interested in my profile and my skills, please feel free to contact me
+          </p>
+          <p><a href="cv.pdf" class="button" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+       <div id="projects" class="section">
+        <h2>Projects</h2>
+        <p>
+            Here's some of the projects that I'm currently working on.
+        </p>
+
+       </div>
+
+      <!-- BOOKS -->
+       <div id="books" class="section">
+        <h2>Books</h2>
+        <p>
+            Here's some books I'm currently reading!
+        </p>
+
+       </div>
+
+      <!-- BLOG -->
+      <!-- <div id="blog" class="section">
+        <h2>Written pieces</h2>
+
+        <div class="post">
+          <p class="date">March 2025</p>
+          <h3>Template for other posts</h3>
+          <p>
+            (Template for other posts)
+          </p>
+          <p><a href="blogs/post-template.html">Read more &raquo;</a></p>
+        </div>
+
+      </div> -->
+
+    </div><!-- /main -->
+
+    <!-- ============ FOOTER ============ -->
+    <div id="footer">
+      <p>&copy; 2026 Martin Lau. All rights reserved.</p>
+      <p>Last updated: 4 November 2026</p>
+      <p>My contacts:
+      <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="https://linkedin.com/in/-martinlau" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/thatmartinlau" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:thatmartinlau@gmail.com">Email</a>
+      </p>
+    </div>
+
+  </div><!-- /container -->
+
 </body>
 </html>

@@ -1,0 +1,272 @@
+/* style.css */
+
+/* ---------- Reset / Base ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #cc0000;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+/* ---------- Container ---------- */
+#container {
+  width: 760px;
+  margin: 15px auto;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+}
+
+/* ---------- Header ---------- */
+#header {
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #999999;
+  padding: 15px 20px 10px 20px;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+#header .tagline {
+  margin: 3px 0 0 0;
+  font-size: 11px;
+  color: #666666;
+  font-style: italic;
+}
+
+/* ---------- Navigation ---------- */
+#nav {
+  background-color: #dddddd;
+  border-bottom: 1px solid #999999;
+  padding: 5px 20px;
+  overflow: hidden;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav ul.nav-main {
+  float: left;
+}
+
+#nav ul.nav-social {
+  float: right;
+}
+
+#nav li {
+  display: inline;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #999999;
+}
+
+#nav li:last-child {
+  border-right: none;
+}
+
+#nav a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0000cc;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+  color: #cc0000;
+}
+
+#nav ul.nav-social a {
+  font-weight: normal;
+  color: #333333;
+}
+
+#nav ul.nav-social a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+/* ---------- Main / Sections ---------- */
+#main {
+  padding: 20px;
+  overflow: hidden; /* clearfix */
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  border-bottom: 1px dashed #cccccc;
+  padding-bottom: 4px;
+  margin: 0 0 12px 0;
+}
+
+/* ---------- Home / Intro ---------- */
+.intro {
+  overflow: hidden;
+}
+
+.avatar {
+  float: left;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #999999;
+  padding: 2px;
+  background-color: #ffffff;
+  margin: 0 15px 10px 0;
+  object-fit: cover;        /* fill the box, crop overflow */
+  object-position: center;  /* which part to keep — see below */
+  display: block;
+}
+
+.intro p {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+/* ---------- CV ---------- */
+.cvbox {
+  background-color: #fafafa;
+  border: 1px solid #cccccc;
+  padding: 12px;
+}
+
+.cvbox p {
+  font-size: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: #e8e8e8;
+  border: 1px solid #999999;
+  border-right-color: #666666;
+  border-bottom-color: #666666;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d8d8d8;
+  color: #000000;
+}
+
+/* ---------- Social ---------- */
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list li {
+  display: inline;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #cccccc;
+}
+
+.social-list li:last-child {
+  border-right: none;
+}
+
+.social-list a {
+  font-size: 12px;
+}
+
+/* ---------- Blog ---------- */
+.post {
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.post .date {
+  font-size: 11px;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.post h3 {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+}
+
+.post p {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.post a {
+  font-size: 12px;
+}
+
+/* ---------- Footer ---------- */
+#footer {
+  border-top: 1px solid #cccccc;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 11px;
+  color: #666666;
+}
+
+#footer p {
+  margin: 3px 0;
+}
+
+/* ---------- Blog article (subpage) ---------- */
+.post-body { margin-top: 10px; }
+.post-body p { margin-bottom: 10px; line-height: 1.6; }
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+  padding: 2px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
+.backlink {
+  border-top: 1px dashed #cccccc;
+  padding-top: 10px;
+  margin-top: 25px;
+}
