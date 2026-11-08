@@ -59,7 +59,6 @@ p {
   margin: 3px 0 0 0;
   font-size: 11px;
   color: #666666;
-  font-style: italic;
 }
 
 /* ---------- Navigation ---------- */
@@ -269,4 +268,89 @@ p {
   border-top: 1px dashed #cccccc;
   padding-top: 10px;
   margin-top: 25px;
+}
+
+/* ---------- Projects ---------- */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.proj {
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.proj-featured {
+  grid-column: 1 / -1;   /* spans both columns */
+  background-color: #fafafa;
+}
+
+.proj .meta {
+  font-size: 11px;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.proj h3 {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+}
+
+.proj p {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.proj .stack {
+  font-size: 11px;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.proj .links {
+  margin-bottom: 0;
+}
+
+.proj .links a {
+  font-size: 11px;
+  margin-right: 8px;
+}
+
+/* stack to one column on narrow screens */
+@media screen and (max-width: 640px) {
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Books ---------- */
+.subhead {
+  font-size: 13px;
+  color: #666666;
+  margin: 16px 0 6px 0;
+}
+
+.book-list {
+  margin: 0 0 4px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.book-list li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.book-list li:last-child {
+  border-bottom: none;
+}
+
+.post .byline {
+  font-size: 11px;
+  color: #666666;
+  margin-bottom: 4px;
 }

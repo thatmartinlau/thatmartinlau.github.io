@@ -21,6 +21,8 @@
       <ul class="nav-main">
         <li><a href="#home">Home</a></li>
         <li><a href="#cv">CV</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#books">Books</a></li>
         <li><a href="#blog">Blog</a></li>
       </ul>
       <ul class="nav-social">
@@ -38,7 +40,7 @@
       <div id="home" class="section">
         <h2>Welcome</h2>
         <div class="intro">
-            <img src="images/me.jpg" alt="Photo of Martin Lau" class="avatar" />
+            <img src="images/me.png" alt="Photo of Martin Lau" class="avatar" />
           <p>
             Hello hello, welcome to my webpage! I come from Hong Kong, and am currently living in France.
             I'm a final year data science student at HEC Paris, with a technical and a business background.
@@ -63,26 +65,96 @@
       </div>
 
       <!-- PROJECTS -->
-       <div id="projects" class="section">
+      <div id="projects" class="section">
         <h2>Projects</h2>
         <p>
-            Here's some of the projects that I'm currently working on.
+          Here's some of the projects that I'm currently working on.
         </p>
 
-       </div>
+        <div class="proj-grid">
+
+          <!-- ===== 1. FEATURED CARD (full width) ===== -->
+          <!-- edit: meta, title, the three labelled paragraphs, stack, links -->
+          <article class="proj proj-featured">
+            <p class="meta">2026 &middot; Master's thesis &middot; solo</p>
+            <h3>Streamlit Data Science Training</h3>
+            <p>
+              A streamlit page to help study for data science interviews, largely AI coded. Includes live mock interviews using a DeepSeek API key, MCQ questions, pandas and SQL refreshers, and Data Science concept cheatsheets.
+            </p>
+            <p class="links">
+              <a href="https://ds-interview-prep.streamlit.app/">Site</a>
+              <a href="https://github.com/thatmartinlau/DS-Training-Streamlit">Code</a>
+            </p>
+          </article>
+
+          <!-- ===== 2. SECOND PROJECT (half width) ===== -->
+          <!-- <article class="proj">
+            <p class="meta">2025 &middot; Course project &middot; team of 3</p>
+            <h3>SECOND PROJECT TITLE</h3>
+            <p>
+              What it does and why it exists, in at most two lines.
+            </p>
+            <p class="result">
+              <strong>&rarr;</strong> One-line outcome or deliverable.
+            </p>
+            <p class="stack">Python &middot; scikit-learn</p>
+            <p class="links">
+              <a href="https://github.com/thatmartinlau/REPO">Code</a>
+              <a href="#">Slides</a>
+            </p>
+          </article>
+ -->
+          <!-- ===== 3. THIRD PROJECT (half width) ===== -->
+          <!-- <article class="proj">
+            <p class="meta">2025 &middot; Personal &middot; solo</p>
+            <h3>THIRD PROJECT TITLE</h3>
+            <p>
+              What it does and why it exists, in at most two lines.
+            </p>
+            <p class="result">
+              <strong>&rarr;</strong> One-line outcome or deliverable.
+            </p>
+            <p class="stack">SQL &middot; dbt</p>
+            <p class="links">
+              <a href="https://github.com/thatmartinlau/REPO">Code</a>
+            </p>
+          </article>
+ -->
+        </div>
+      </div>
 
       <!-- BOOKS -->
-       <div id="books" class="section">
+      <div id="books" class="section">
         <h2>Books</h2>
-        <p>
-            Here's some books I'm currently reading!
-        </p>
 
-       </div>
+        <!-- ===== CURRENTLY READING ===== -->
+        <!-- start a book: add one <li>. finish it: delete the <li> and add a
+             review card below. keep this list at three to five entries. -->
+        <h3 class="subhead">Currently reading</h3>
+        <ul class="book-list">
+          <li><em>Data Strategy</em> &mdash; HBR's 10 Must Reads</li>
+        </ul>
+
+        <!-- ===== REVIEWS ===== -->
+        <!-- copy one .post block per finished book, newest first.
+             each links to its own page in books/ (copy review-template.html). -->
+        <!-- <h3 class="subhead">Reviews</h3>
+
+        <div class="post">
+          <p class="date">November 2026</p>
+          <h3><a href="books/review-template.html">Book title</a></h3>
+          <p class="byline">Author name &middot; Publisher, year</p>
+          <p>
+            One-sentence verdict: what the book is, and who it's for.
+          </p>
+          <p><a href="books/review-template.html">Read the review &raquo;</a></p>
+        </div>
+
+      </div>
 
       <!-- BLOG -->
-      <!-- <div id="blog" class="section">
-        <h2>Written pieces</h2>
+      <div id="blog" class="section">
+        <h2>Blog</h2>
 
         <div class="post">
           <p class="date">March 2025</p>
@@ -93,14 +165,14 @@
           <p><a href="blogs/post-template.html">Read more &raquo;</a></p>
         </div>
 
-      </div> -->
+      </div>
 
     </div><!-- /main -->
 
     <!-- ============ FOOTER ============ -->
     <div id="footer">
       <p>&copy; 2026 Martin Lau. All rights reserved.</p>
-      <p>Last updated: 4 November 2026</p>
+      <p>Last updated: 8 November 2026</p>
       <p>My contacts:
       <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
       <a href="https://linkedin.com/in/-martinlau" target="_blank" rel="noopener">LinkedIn</a>
